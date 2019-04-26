@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <title>Predict Your Wealth</title>
-    <link rel="icon" href="http://healthycities.sice.indiana.edu/images/ICON_sensor.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="/images/icon.png" type="image/gif" sizes="16x16">
 
     <style>
     .row div{padding: 20px 10px; border: 1px solid;}
@@ -25,9 +25,22 @@
 
 <body>
 
-<h1>Wealth Prediction based on US Census Data</h1>
-<p> Please fill in the values below to classify your Income Level as being higher or lower than 50,000 USD per year.</p>
-<div>
+
+
+<div class="jumbotron jumbotron-fluid bg-info text-white text-center" style="background: #AAA;">
+
+    <div class="container">
+        <h2 class="display-1">Wealth Prediction based on US Census Data</h2>
+        <br>
+        <p class="lead">Please fill in the values below to classify your Income Level as being higher or lower than 50,000 USD per year.</p>
+    </div>
+
+</div>
+
+
+<div class="container">
+
+
 
 <!-- after you run this POST method (which is sending a POST request to the web server), it will send us to the /result page -->
 <form action="/result" method="POST">
@@ -109,7 +122,9 @@
     <input type="submit" value="Send">
 
 </form>
-</div>
+
+
+</div> <!-- end .container-->
 
 
 </body>
