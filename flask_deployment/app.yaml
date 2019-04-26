@@ -1,0 +1,5 @@
+entrypoint: "unicorn -b :$PORT main:app" #unicorn is the web server that is the entry point of our application. main is our "flask app main.py"
+env: flex # environment options are flexible (can be set to standard too)
+runtime: python
+runtime_config:
+  python_version: 3
