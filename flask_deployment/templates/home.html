@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>                
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <title>Predict Your Wealth</title>
+    <link rel="icon" href="http://healthycities.sice.indiana.edu/images/ICON_sensor.png" type="image/gif" sizes="16x16">
+
+    <style>
+    .row div{padding: 20px 10px; border: 1px solid;}
+    </style>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+</head>
+
+
+
+<body>
+
+<h1>Wealth Prediction based on US Census Data</h1>
+<p> Please fill in the values below to classify your Income Level as being higher or lower than 50,000 USD per year.</p>
+<div>
+
+<!-- after you run this POST method (which is sending a POST request to the web server), it will send us to the /result page -->
+<form action="/result" method="POST">
+
+    <label>Age</label>
+    <input type="text" name="age" value="35">
+    <br>
+    <!-- DropDown -->
+    <label>Education Completed</label>
+    <select name="education_num">
+        <option value="1">Preschool</option>
+        <option value="2">1st-4th</option>
+        <option value="3">5th-6th</option>
+        <option value="4">7th-8th</option>
+        <option value="5">9th</option>
+        <option value="6">10th</option>
+        <option value="7">11th</option>
+        <option value="8">12th</option>
+        <option value="9">High School Grad</option>
+        <option value="10">Some-College</option>
+        <option value="11">Associates Degree Vocational</option>
+        <option value="12">Associates Degree Academic</option>
+        <option value="13">Bachelors Degree</option>
+        <option value="14">Masters Degree</option>
+        <option value="15">Higher Professional Schooling</option>
+        <option value="16">Doctorate</option>
+    </select>
+    <br>
+    <label>Yearly Capital Gain</label>
+    <input type="text" name="capital_gain" value="0">
+    <br>
+    <label>Yearly Capital Loss</label>
+    <input type="text" name="capital_loss" value="0">
+    <br>
+    <label>Hours Worked per Week</label>
+    <input type="text" name="hours_per_week" value="60">
+    <br>
+    <!-- DropDown -->
+    <label>Occupation Sector</label>
+    <select name="occupation">
+        <option value="0">?</option>
+        <option value="1">Adm-clerical</option>
+        <option value="2">Armed-Forces</option>
+        <option value="3">Craft-repair</option>
+        <option value="4">Exec-managerial</option>
+        <option value="5">Farming-fishing</option>
+        <option value="6">Handlers-cleaners</option>
+        <option value="7">Machine-op-inspct</option>
+        <option value="8">Other-service</option>
+        <option value="9">Priv-house-serv</option>
+        <option value="10">Prof-specialty</option>
+        <option value="11">Protective-serv</option>
+        <option value="12">Sales</option>
+        <option value="13">Tech-support</option>
+        <option value="14">Transport-moving</option>
+    </select>
+    <br>
+    <!-- DropDown -->
+    <label>Relationship</label>
+    <select name="relationship">
+        <option value="0">Husband</option>
+        <option value="1">Not in Family</option>
+        <option value="2">Other Relative</option>
+        <option value="3">Own Child</option>
+        <option value="4">Unmarried</option>
+        <option value="5">Wife</option>
+    </select>
+    <br>
+    <!-- DropDown -->
+    <label>Race</label>
+    <select name="race">
+        <option value="0">American Indian Eskimo</option>
+        <option value="1">Asian / Pacific Islander</option>
+        <option value="2">Black</option>
+        <option value="3">Other</option>
+        <option value="4">White</option>
+    </select>
+    <br>
+    <input type="submit" value="Send">
+
+</form>
+</div>
+
+
+</body>
+</html>
