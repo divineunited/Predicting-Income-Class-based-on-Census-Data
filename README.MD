@@ -2,6 +2,12 @@
 
 I am going to examine the Census Income dataset available at the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Census+Income). Using this data, I will build ML models to predict whether an individual’s income will be greater than or less than $50,000 USD per year based on features from the census data.
 
+
+# Test out the model [here](https://classifyincome.appspot.com/):
+
+https://classifyincome.appspot.com/
+
+
 ### About the Data:
 
 The US Adult Census dataset is a repository of 48,842 entries extracted from the 1994 US Census database.
