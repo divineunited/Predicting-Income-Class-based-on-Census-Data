@@ -30,9 +30,10 @@
 <div class="jumbotron jumbotron-fluid bg-info text-white text-center" style="background: #AAA;">
 
     <div class="container">
-        <h2 class="display-1">Wealth Prediction based on US Census Data</h2>
+        <h2 class="display-1">Wealth Prediction based on 1994 US Census Data</h2>
         <br>
-        <p class="lead">Please fill in the values below to classify your Income Level as being higher or lower than 50,000 USD per year.</p>
+        <p class="text-white bg-dark">Using an AdaBoost Classifier with a Decision Tree Sci-Kit Machine Learning Model</p>
+        <a href="https://github.com/divineunited/Predicting-Income-Class-based-on-Census-Data" class="text-white bg-dark">Click here for the GitHub Source Code</a>
     </div>
 
 </div>
@@ -40,7 +41,7 @@
 
 <div class="container">
 
-
+<p class="lead">Please fill in the values below to see if your Income Level would have been higher or lower than 50,000 USD per year in 1994.</p>
 
 <!-- after you run this POST method (which is sending a POST request to the web server), it will send us to the /result page -->
 <form action="/result" method="POST">
@@ -119,9 +120,14 @@
         <option value="4">White</option>
     </select>
     <br>
+    <br>
     <input type="submit" value="Send">
+    <br>
+    <br>
+    <br>
 
 </form>
+
 
 
 </div> <!-- end .container-->
